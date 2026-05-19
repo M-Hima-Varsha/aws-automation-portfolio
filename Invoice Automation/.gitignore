@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+
+# Keep real invoice files and generated billing reports out of GitHub.
+invoices/*
+!invoices/.gitkeep
+!invoices/Invoice_DEMO0000001.pdf
+!invoices/Invoice_DEMO0000002.pdf
+!invoices/Invoice_DEMO0000003.pdf
+Invoice_Report_Dev&Prod-*.xlsx
+*.xlsx
+
+# Local editor and OS files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

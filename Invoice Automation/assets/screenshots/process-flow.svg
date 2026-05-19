@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Invoice Automation Process Flow</title>
+  <desc id="desc">Step-by-step workflow from AWS invoice PDFs to a formatted Excel Invoice Report, with function names.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .title-text { fill: #18324a; font: 700 28px Arial, sans-serif; }
+      .subtitle-text { fill: #4f6375; font: 400 15px Arial, sans-serif; }
+      .card { fill: #ffffff; stroke: #cfd9e3; stroke-width: 2; }
+      .card-num { fill: #1f4e78; }
+      .card-num-text { fill: #ffffff; font: 700 15px Arial, sans-serif; }
+      .card-label { fill: #18324a; font: 700 14px Arial, sans-serif; }
+      .card-fn { fill: #2f80ed; font: 400 12px 'Courier New', monospace; }
+      .card-sub { fill: #52677a; font: 400 12px Arial, sans-serif; }
+      .arrow { stroke: #2f80ed; stroke-width: 3; fill: none; marker-end: url(#arr); }
+      .output-box { fill: #1f4e78; }
+      .output-text { fill: #ffffff; font: 700 16px Arial, sans-serif; }
+      .tag-box { fill: #e8f2ff; stroke: #8dbdf5; stroke-width: 1.5; }
+      .tag-text { fill: #1f5f9f; font: 700 13px Arial, sans-serif; }
+      .info-box { fill: #ffffff; stroke: #cfd9e3; stroke-width: 1.5; }
+      .info-title { fill: #1f4e78; font: 700 13px Arial, sans-serif; }
+      .info-item { fill: #52677a; font: 400 12px Arial, sans-serif; }
+    </style>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 Z" fill="#2f80ed"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1200" height="680"/>
+
+  <!-- Title -->
+  <text class="title-text" x="60" y="58">AWS Invoice Automation — Process Flow</text>
+  <text class="subtitle-text" x="60" y="82">How downloaded AWS invoice PDFs are converted into a formatted monthly Excel Invoice Report</text>
+
+  <!-- Step cards: y=120, height=140 -->
+
+  <!-- Step 1 -->
+  <rect class="card" x="40" y="110" width="160" height="145" rx="12"/>
+  <circle class="card-num" cx="75" cy="138" r="18"/>
+  <text class="card-num-text" x="69" y="144">1</text>
+  <text class="card-label" x="55" y="178">Place PDFs</text>
+  <text class="card-sub" x="55" y="198">Add AWS invoice</text>
+  <text class="card-sub" x="55" y="214">PDFs into the</text>
+  <text class="card-sub" x="55" y="230">invoices/ folder</text>
+
+  <path class="arrow" d="M202 183 H222"/>
+
+  <!-- Step 2 -->
+  <rect class="card" x="224" y="110" width="160" height="145" rx="12"/>
+  <circle class="card-num" cx="259" cy="138" r="18"/>
+  <text class="card-num-text" x="253" y="144">2</text>
+  <text class="card-label" x="239" y="178">Validate Period</text>
+  <text class="card-fn" x="239" y="198">validate_invoices</text>
+  <text class="card-fn" x="239" y="213">_match_previous</text>
+  <text class="card-fn" x="239" y="228">_month()</text>
+  <text class="card-sub" x="239" y="246">Checks billing month</text>
+
+  <path class="arrow" d="M386 183 H406"/>
+
+  <!-- Step 3 -->
+  <rect class="card" x="408" y="110" width="160" height="145" rx="12"/>
+  <circle class="card-num" cx="443" cy="138" r="18"/>
+  <text class="card-num-text" x="437" y="144">3</text>
+  <text class="card-label" x="423" y="178">Parse PDFs</text>
+  <text class="card-fn" x="423" y="198">parse_invoice()</text>
+  <text class="card-sub" x="423" y="218">Reads text using</text>
+  <text class="card-sub" x="423" y="234">pdfplumber</text>
+  <text class="card-sub" x="423" y="250">Extracts all fields</text>
+
+  <path class="arrow" d="M570 183 H590"/>
+
+  <!-- Step 4 -->
+  <rect class="card" x="592" y="110" width="160" height="145" rx="12"/>
+  <circle class="card-num" cx="627" cy="138" r="18"/>
+  <text class="card-num-text" x="621" y="144">4</text>
+  <text class="card-label" x="607" y="178">Consolidate</text>
+  <text class="card-fn" x="607" y="198">consolidate</text>
+  <text class="card-fn" x="607" y="213">_results()</text>
+  <text class="card-sub" x="607" y="233">Merges accounts,</text>
+  <text class="card-sub" x="607" y="249">removes duplicates</text>
+
+  <path class="arrow" d="M754 183 H774"/>
+
+  <!-- Step 5 -->
+  <rect class="card" x="776" y="110" width="160" height="145" rx="12"/>
+  <circle class="card-num" cx="811" cy="138" r="18"/>
+  <text class="card-num-text" x="805" y="144">5</text>
+  <text class="card-label" x="791" y="178">Build Entries</text>
+  <text class="card-fn" x="791" y="198">build_account</text>
+  <text class="card-fn" x="791" y="213">_entries()</text>
+  <text class="card-sub" x="791" y="233">Classifies costs:</text>
+  <text class="card-sub" x="791" y="249">Services, MP, Fees</text>
+
+  <path class="arrow" d="M938 183 H958"/>
+
+  <!-- Step 6 -->
+  <rect class="card" x="960" y="110" width="190" height="145" rx="12"/>
+  <circle class="card-num" cx="995" cy="138" r="18"/>
+  <text class="card-num-text" x="989" y="144">6</text>
+  <text class="card-label" x="975" y="178">Export to Excel</text>
+  <text class="card-fn" x="975" y="198">export_to</text>
+  <text class="card-fn" x="975" y="213">_generated</text>
+  <text class="card-fn" x="975" y="228">_excel()</text>
+  <text class="card-sub" x="975" y="248">Builds .xlsx with</text>
+  <text class="card-sub" x="975" y="264">totals and formatting</text>
+
+  <!-- Arrow from step 6 down to output banner -->
+  <path class="arrow" d="M1055 257 L1055 305 L600 305 L600 323"/>
+
+  <!-- Output banner -->
+  <rect class="output-box" x="270" y="325" width="660" height="52" rx="12"/>
+  <text class="output-text" x="600" y="358" text-anchor="middle">Output: Invoice_Report_Dev&amp;Prod-&lt;Month&gt;-&lt;Year&gt;.xlsx</text>
+
+  <!-- Info boxes row -->
+  <text x="60" y="430" fill="#18324a" font-family="Arial,sans-serif" font-size="15" font-weight="700">What gets extracted from each PDF:</text>
+
+  <!-- Box 1 -->
+  <rect class="info-box" x="60" y="448" width="255" height="100" rx="10"/>
+  <text class="info-title" x="80" y="472">Account Details</text>
+  <text class="info-item" x="80" y="494">Account name (from PDF text)</text>
+  <text class="info-item" x="80" y="512">12-digit Account ID</text>
+  <text class="info-item" x="80" y="530">Invoice number</text>
+
+  <!-- Box 2 -->
+  <rect class="info-box" x="330" y="448" width="255" height="100" rx="10"/>
+  <text class="info-title" x="350" y="472">Billing Period</text>
+  <text class="info-item" x="350" y="494">Month and year from PDF</text>
+  <text class="info-item" x="350" y="512">Validated against system date</text>
+  <text class="info-item" x="350" y="530">Must match previous month</text>
+
+  <!-- Box 3 -->
+  <rect class="info-box" x="600" y="448" width="255" height="100" rx="10"/>
+  <text class="info-title" x="620" y="472">Charge Lines</text>
+  <text class="info-item" x="620" y="494">AWS service charges</text>
+  <text class="info-item" x="620" y="512">Marketplace charges</text>
+  <text class="info-item" x="620" y="530">Late fee entries (OBC)</text>
+
+  <!-- Box 4 -->
+  <rect class="info-box" x="870" y="448" width="270" height="100" rx="10"/>
+  <text class="info-title" x="890" y="472">Libraries Used</text>
+  <text class="info-item" x="890" y="494">pdfplumber — reads PDF text</text>
+  <text class="info-item" x="890" y="512">openpyxl — creates Excel report</text>
+  <text class="info-item" x="890" y="530">No AWS credentials needed</text>
+
+  <!-- Footer note -->
+  <rect class="tag-box" x="60" y="575" width="1080" height="44" rx="10"/>
+  <text class="tag-text" x="600" y="602" text-anchor="middle">Run command:  python invoice-automation.py   |   Script auto-detects billing period from PDF content — no hardcoded account names needed</text>
+</svg>

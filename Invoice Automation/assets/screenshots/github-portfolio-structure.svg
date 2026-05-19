@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Portfolio Repository Structure</title>
+  <desc id="desc">Recommended GitHub repository layout for the AWS Invoice Automation project and broader portfolio.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .title-text { fill: #18324a; font: 700 28px Arial, sans-serif; }
+      .subtitle-text { fill: #53697d; font: 400 15px Arial, sans-serif; }
+      .repo-bar { fill: #18324a; }
+      .repo-text { fill: #ffffff; font: 700 20px Arial, sans-serif; }
+      .branch-box { fill: #e8f2ff; stroke: #8dbdf5; stroke-width: 1.5; }
+      .branch-text { fill: #1f5f9f; font: 700 13px Arial, sans-serif; }
+      .folder-box { fill: #ffffff; stroke: #cfd9e3; stroke-width: 2; }
+      .folder-title { fill: #18324a; font: 700 17px Arial, sans-serif; }
+      .folder-icon { fill: #f0a500; }
+      .file-text { fill: #52677a; font: 400 14px Arial, sans-serif; }
+      .file-icon { fill: #2f80ed; }
+      .gitkeep { fill: #aebdca; font: 400 13px Arial, sans-serif; }
+      .highlight-box { fill: #e8f2ff; stroke: #8dbdf5; stroke-width: 1.5; }
+      .highlight-text { fill: #1f5f9f; font: 700 13px Arial, sans-serif; }
+      .note-bar { fill: #1d3448; }
+      .note-text { fill: #ffffff; font: 400 14px Arial, sans-serif; }
+      .tree-line { stroke: #cfd9e3; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="640"/>
+
+  <text class="title-text" x="60" y="52">GitHub Portfolio Structure</text>
+  <text class="subtitle-text" x="60" y="78">Recommended layout for AWS automation projects under one professional repository.</text>
+
+  <!-- Repo bar -->
+  <rect class="repo-bar" x="60" y="105" width="1080" height="56" rx="12"/>
+  <text class="repo-text" x="90" y="140">📁  aws-automation-portfolio</text>
+  <rect class="branch-box" x="870" y="120" width="230" height="28" rx="8"/>
+  <text class="branch-text" x="985" y="139" text-anchor="middle">default branch: main</text>
+
+  <!-- Connector lines from repo to folders -->
+  <line class="tree-line" x1="600" y1="161" x2="600" y2="185"/>
+  <line class="tree-line" x1="175" y1="185" x2="1025" y2="185"/>
+  <line class="tree-line" x1="175" y1="185" x2="175" y2="205"/>
+  <line class="tree-line" x1="600" y1="185" x2="600" y2="205"/>
+  <line class="tree-line" x1="1025" y1="185" x2="1025" y2="205"/>
+
+  <!-- FOLDER 1: invoice-automation (highlighted — this project) -->
+  <rect class="highlight-box" x="60" y="205" width="290" height="290" rx="12"/>
+  <text class="folder-title" x="85" y="238">📂  invoice-automation/</text>
+  <text class="highlight-text" x="85" y="258">← This project</text>
+
+  <text class="file-text" x="105" y="288">📄  invoice-automation.py</text>
+  <text class="file-text" x="105" y="314">📄  README.md</text>
+  <text class="file-text" x="105" y="340">📄  .gitignore</text>
+  <text class="file-text" x="105" y="366">📁  invoices/</text>
+  <text class="gitkeep"  x="130" y="388">└── .gitkeep</text>
+  <text class="file-text" x="105" y="414">📁  assets/screenshots/</text>
+  <text class="gitkeep"  x="130" y="436">├── process-flow.svg</text>
+  <text class="gitkeep"  x="130" y="454">├── excel-report-layout.svg</text>
+  <text class="gitkeep"  x="130" y="472">└── ...</text>
+
+  <!-- FOLDER 2: consolidated-report -->
+  <rect class="folder-box" x="455" y="205" width="290" height="290" rx="12"/>
+  <text class="folder-title" x="480" y="238">📂  consolidated-report/</text>
+
+  <text class="file-text" x="500" y="278">📄  README.md</text>
+  <text class="file-text" x="500" y="304">📄  consolidated-report.py</text>
+  <text class="file-text" x="500" y="330">📁  input/</text>
+  <text class="gitkeep"  x="525" y="352">└── .gitkeep</text>
+  <text class="file-text" x="500" y="378">📁  output/</text>
+  <text class="gitkeep"  x="525" y="400">└── .gitkeep</text>
+  <text class="file-text" x="500" y="426">📁  assets/screenshots/</text>
+
+  <!-- FOLDER 3: ri-utilization-report -->
+  <rect class="folder-box" x="850" y="205" width="290" height="290" rx="12"/>
+  <text class="folder-title" x="875" y="238">📂  ri-utilization-report/</text>
+
+  <text class="file-text" x="895" y="278">📄  README.md</text>
+  <text class="file-text" x="895" y="304">📄  ri-utilization.py</text>
+  <text class="file-text" x="895" y="330">📁  input/</text>
+  <text class="gitkeep"  x="920" y="352">└── .gitkeep</text>
+  <text class="file-text" x="895" y="378">📁  output/</text>
+  <text class="gitkeep"  x="920" y="400">└── .gitkeep</text>
+  <text class="file-text" x="895" y="426">📁  assets/screenshots/</text>
+
+  <!-- Note bar -->
+  <rect class="note-bar" x="60" y="525" width="1080" height="52" rx="12"/>
+  <text class="note-text" x="600" y="548" text-anchor="middle">✅  Commit: invoice-automation.py  |  README.md  |  .gitignore  |  invoices/.gitkeep  |  assets/screenshots/*.svg</text>
+  <text class="note-text" x="600" y="568" text-anchor="middle">🚫  Do NOT commit: invoices/*.pdf  |  Invoice_Report_Dev&amp;Prod-*.xlsx  |  __pycache__/  |  *.pyc</text>
+</svg>

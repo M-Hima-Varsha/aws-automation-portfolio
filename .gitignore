@@ -1,0 +1,47 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment and credential files
+.env
+.env.*
+*.pem
+*.key
+credentials*
+config*
+
+# AWS billing/report input files
+*.pdf
+*.csv
+*.tsv
+*.json
+
+# Generated report outputs
+*.xlsx
+*.xls
+*.xlsm
+
+# Keep empty input/output folders in GitHub
+!**/.gitkeep
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="860" viewBox="0 0 600 860" role="img" aria-labelledby="title desc">
+  <title id="title">Processing Flow</title>
+  <desc id="desc">Step-by-step processing flow of the AWS Invoice Automation script.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .box { fill: #ffffff; stroke: #4a90d9; stroke-width: 2; }
+      .box-text { fill: #18324a; font: 400 15px Arial, sans-serif; }
+      .arrow { stroke: #4a90d9; stroke-width: 2.5; fill: none; marker-end: url(#arr); }
+    </style>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7 Z" fill="#4a90d9"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="600" height="860"/>
+
+  <!-- Box 1 -->
+  <rect class="box" x="175" y="30" width="250" height="60" rx="6"/>
+  <text class="box-text" x="300" y="55" text-anchor="middle">AWS Invoice PDFs placed</text>
+  <text class="box-text" x="300" y="75" text-anchor="middle">in invoices/ folder</text>
+
+  <line class="arrow" x1="300" y1="90" x2="300" y2="125"/>
+
+  <!-- Box 2 -->
+  <rect class="box" x="175" y="125" width="250" height="60" rx="6"/>
+  <text class="box-text" x="300" y="150" text-anchor="middle">Validate billing period</text>
+  <text class="box-text" x="300" y="170" text-anchor="middle">against previous month</text>
+
+  <line class="arrow" x1="300" y1="185" x2="300" y2="220"/>
+
+  <!-- Box 3 -->
+  <rect class="box" x="175" y="220" width="250" height="60" rx="6"/>
+  <text class="box-text" x="300" y="245" text-anchor="middle">Extract text from each PDF</text>
+  <text class="box-text" x="300" y="265" text-anchor="middle">using pdfplumber</text>
+
+  <line class="arrow" x1="300" y1="280" x2="300" y2="315"/>
+
+  <!-- Box 4 -->
+  <rect class="box" x="175" y="315" width="250" height="60" rx="6"/>
+  <text class="box-text" x="300" y="340" text-anchor="middle">Parse account name, ID,</text>
+  <text class="box-text" x="300" y="360" text-anchor="middle">invoice number, and charges</text>
+
+  <line class="arrow" x1="300" y1="375" x2="300" y2="410"/>
+
+  <!-- Box 5 -->
+  <rect class="box" x="175" y="410" width="250" height="75" rx="6"/>
+  <text class="box-text" x="300" y="435" text-anchor="middle">Classify charges:</text>
+  <text class="box-text" x="300" y="455" text-anchor="middle">AWS Services / Marketplace</text>
+  <text class="box-text" x="300" y="475" text-anchor="middle">/ Late Fee</text>
+
+  <line class="arrow" x1="300" y1="485" x2="300" y2="520"/>
+
+  <!-- Box 6 -->
+  <rect class="box" x="175" y="520" width="250" height="60" rx="6"/>
+  <text class="box-text" x="300" y="545" text-anchor="middle">Remove duplicate entries</text>
+  <text class="box-text" x="300" y="565" text-anchor="middle"> </text>
+
+  <line class="arrow" x1="300" y1="580" x2="300" y2="615"/>
+
+  <!-- Box 7 -->
+  <rect class="box" x="175" y="615" width="250" height="60" rx="6"/>
+  <text class="box-text" x="300" y="640" text-anchor="middle">Build account-wise rows</text>
+  <text class="box-text" x="300" y="660" text-anchor="middle">with totals and grand total</text>
+
+  <line class="arrow" x1="300" y1="675" x2="300" y2="710"/>
+
+  <!-- Box 8 -->
+  <rect class="box" x="175" y="710" width="250" height="75" rx="6"/>
+  <text class="box-text" x="300" y="735" text-anchor="middle">Export formatted Excel</text>
+  <text class="box-text" x="300" y="755" text-anchor="middle">Invoice Report using</text>
+  <text class="box-text" x="300" y="775" text-anchor="middle">openpyxl and save to disk</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Access and Security Requirements</title>
+  <desc id="desc">Professional access and security checklist for AWS invoice automation — what is required and what is not.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7fafc; }
+      .title-text { fill: #1d3448; font: 700 28px Arial, sans-serif; }
+      .subtitle-text { fill: #53697d; font: 400 15px Arial, sans-serif; }
+      .panel { fill: #ffffff; stroke: #cfd9e3; stroke-width: 2; }
+      .panel-hdr-green { fill: #1f9d55; }
+      .panel-hdr-red { fill: #c2410c; }
+      .panel-hdr-text { fill: #ffffff; font: 700 18px Arial, sans-serif; }
+      .item-text { fill: #2d3f50; font: 400 15px Arial, sans-serif; }
+      .check { fill: #1f9d55; font: 700 20px Arial, sans-serif; }
+      .cross { fill: #c2410c; font: 700 20px Arial, sans-serif; }
+      .note-box { fill: #1d3448; }
+      .note-text { fill: #ffffff; font: 700 15px Arial, sans-serif; }
+      .badge-box { fill: #e8f2ff; stroke: #8dbdf5; stroke-width: 1.5; }
+      .badge-text { fill: #1f5f9f; font: 700 13px Arial, sans-serif; }
+      .section-label { fill: #18324a; font: 700 14px Arial, sans-serif; }
+      .section-val { fill: #52677a; font: 400 13px Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="660"/>
+
+  <!-- Title -->
+  <text class="title-text" x="60" y="58">Access and Security Requirements</text>
+  <text class="subtitle-text" x="60" y="84">The automation works with downloaded invoice PDFs and does not require AWS credentials inside the code.</text>
+
+  <!-- LEFT PANEL: Required -->
+  <rect class="panel" x="60" y="110" width="510" height="370" rx="14"/>
+  <rect class="panel-hdr-green" x="60" y="110" width="510" height="52" rx="14"/>
+  <rect class="panel-hdr-green" x="60" y="148" width="510" height="14"/>
+  <text class="panel-hdr-text" x="315" y="143" text-anchor="middle">✓  What You Need</text>
+
+  <text class="check" x="90" y="200">✓</text>
+  <text class="item-text" x="125" y="200">AWS Billing access to download invoice PDFs</text>
+
+  <text class="check" x="90" y="242">✓</text>
+  <text class="item-text" x="125" y="242">All linked account invoice PDFs for the month</text>
+
+  <text class="check" x="90" y="284">✓</text>
+  <text class="item-text" x="125" y="284">Python installed on your local machine</text>
+
+  <text class="check" x="90" y="326">✓</text>
+  <text class="item-text" x="125" y="326">Read and write access to the project folder</text>
+
+  <text class="check" x="90" y="368">✓</text>
+  <text class="item-text" x="125" y="368">Excel or any spreadsheet viewer to open output</text>
+
+  <text class="check" x="90" y="410">✓</text>
+  <text class="item-text" x="125" y="410">pip install pdfplumber openpyxl  (one-time setup)</text>
+
+  <!-- RIGHT PANEL: Not Required -->
+  <rect class="panel" x="630" y="110" width="510" height="370" rx="14"/>
+  <rect class="panel-hdr-red" x="630" y="110" width="510" height="52" rx="14"/>
+  <rect class="panel-hdr-red" x="630" y="148" width="510" height="14"/>
+  <text class="panel-hdr-text" x="885" y="143" text-anchor="middle">✗  What You Do NOT Need</text>
+
+  <text class="cross" x="660" y="200">✗</text>
+  <text class="item-text" x="695" y="200">AWS access key or secret key in the code</text>
+
+  <text class="cross" x="660" y="242">✗</text>
+  <text class="item-text" x="695" y="242">AWS CLI configuration or profiles</text>
+
+  <text class="cross" x="660" y="284">✗</text>
+  <text class="item-text" x="695" y="284">Boto3 or any AWS SDK setup</text>
+
+  <text class="cross" x="660" y="326">✗</text>
+  <text class="item-text" x="695" y="326">IAM roles or IAM credentials</text>
+
+  <text class="cross" x="660" y="368">✗</text>
+  <text class="item-text" x="695" y="368">Hardcoded account names or account list file</text>
+
+  <text class="cross" x="660" y="410">✗</text>
+  <text class="item-text" x="695" y="410">Base Excel template or predefined report layout</text>
+
+  <!-- Data safety note -->
+  <rect class="note-box" x="60" y="510" width="1080" height="52" rx="12"/>
+  <text class="note-text" x="600" y="541" text-anchor="middle">Data Safety: Do not commit real invoice PDFs or generated Excel reports to GitHub. Keep billing data local or in approved internal storage.</text>
+
+  <!-- Bottom badges -->
+  <rect class="badge-box" x="60" y="585" width="340" height="44" rx="10"/>
+  <text class="badge-text" x="230" y="612" text-anchor="middle">No cloud API calls made during execution</text>
+
+  <rect class="badge-box" x="430" y="585" width="340" height="44" rx="10"/>
+  <text class="badge-text" x="600" y="612" text-anchor="middle">Account names extracted directly from PDF text</text>
+
+  <rect class="badge-box" x="800" y="585" width="340" height="44" rx="10"/>
+  <text class="badge-text" x="970" y="612" text-anchor="middle">Works fully offline after pip install</text>
+</svg>

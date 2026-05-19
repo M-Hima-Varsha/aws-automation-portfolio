@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Console Output — Running the Invoice Automation Script</title>
+  <desc id="desc">Terminal window showing the exact console output when invoice-automation.py is executed successfully.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .title-text { fill: #18324a; font: 700 28px Arial, sans-serif; }
+      .subtitle-text { fill: #53697d; font: 400 15px Arial, sans-serif; }
+      .terminal { fill: #1e1e2e; }
+      .terminal-bar { fill: #2d2d3f; }
+      .dot-red { fill: #ff5f57; }
+      .dot-yellow { fill: #febc2e; }
+      .dot-green { fill: #28c840; }
+      .bar-text { fill: #9a9ab0; font: 400 13px Arial, sans-serif; }
+      .prompt { fill: #50fa7b; font: 400 15px 'Courier New', monospace; }
+      .cmd { fill: #f8f8f2; font: 400 15px 'Courier New', monospace; }
+      .out-label { fill: #8be9fd; font: 400 15px 'Courier New', monospace; }
+      .out-value { fill: #f8f8f2; font: 400 15px 'Courier New', monospace; }
+      .out-success { fill: #50fa7b; font: 700 15px 'Courier New', monospace; }
+      .out-file { fill: #ffb86c; font: 700 15px 'Courier New', monospace; }
+      .step-box { fill: #ffffff; stroke: #cfd9e3; stroke-width: 1.5; }
+      .step-num { fill: #1f4e78; }
+      .step-num-text { fill: #ffffff; font: 700 13px Arial, sans-serif; }
+      .step-text { fill: #2d3f50; font: 400 13px Arial, sans-serif; }
+      .note-box { fill: #fff8e1; stroke: #f0c040; stroke-width: 1.5; }
+      .note-text { fill: #7a5c00; font: 400 13px Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="560"/>
+
+  <text class="title-text" x="60" y="52">Console Output — Running the Script</text>
+  <text class="subtitle-text" x="60" y="78">Exact terminal output you will see when invoice-automation.py runs successfully.</text>
+
+  <!-- Terminal window -->
+  <rect class="terminal" x="60" y="100" width="780" height="310" rx="12"/>
+
+  <!-- Title bar -->
+  <rect class="terminal-bar" x="60" y="100" width="780" height="36" rx="12"/>
+  <rect class="terminal-bar" x="60" y="124" width="780" height="12"/>
+  <circle class="dot-red"    cx="90"  cy="118" r="7"/>
+  <circle class="dot-yellow" cx="114" cy="118" r="7"/>
+  <circle class="dot-green"  cx="138" cy="118" r="7"/>
+  <text class="bar-text" x="440" y="123" text-anchor="middle">PowerShell — Invoice Automation</text>
+
+  <!-- Terminal content -->
+  <!-- Line 1: prompt + command -->
+  <text class="prompt" x="84" y="162">PS C:\Invoice Automation&gt;</text>
+  <text class="cmd"    x="340" y="162">python invoice-automation.py</text>
+
+  <!-- Line 2 -->
+  <text class="out-label" x="84" y="192">Validating invoice billing period...</text>
+
+  <!-- Line 3 -->
+  <text class="out-label" x="84" y="222">Processing invoices for:</text>
+  <text class="out-value" x="330" y="222">April-2026</text>
+
+  <!-- Line 4 -->
+  <text class="out-label" x="84" y="252">Processing invoices...</text>
+
+  <!-- Line 5 -->
+  <text class="out-label" x="84" y="282">Exporting to Excel...</text>
+
+  <!-- Line 6: success -->
+  <text class="out-success" x="84" y="318">Invoice Report is updated for April-2026 :</text>
+  <text class="out-file"    x="84" y="344">Invoice_Report_Dev&amp;Prod-April-2026.xlsx</text>
+
+  <!-- Line 7: next prompt -->
+  <text class="prompt" x="84" y="378">PS C:\Invoice Automation&gt;</text>
+  <text class="cmd"    x="340" y="378">_</text>
+
+  <!-- Steps panel on the right -->
+  <rect class="step-box" x="880" y="100" width="260" height="310" rx="12"/>
+  <text x="1010" y="128" text-anchor="middle" fill="#18324a" font-family="Arial,sans-serif" font-size="14" font-weight="700">What each line means</text>
+
+  <!-- Step 1 -->
+  <circle class="step-num" cx="906" cy="158" r="14"/>
+  <text class="step-num-text" x="900" y="163">1</text>
+  <text class="step-text" x="928" y="153">Reads billing period</text>
+  <text class="step-text" x="928" y="168">from all PDFs</text>
+
+  <!-- Step 2 -->
+  <circle class="step-num" cx="906" cy="208" r="14"/>
+  <text class="step-num-text" x="900" y="213">2</text>
+  <text class="step-text" x="928" y="203">Validates against</text>
+  <text class="step-text" x="928" y="218">previous month</text>
+
+  <!-- Step 3 -->
+  <circle class="step-num" cx="906" cy="258" r="14"/>
+  <text class="step-num-text" x="900" y="263">3</text>
+  <text class="step-text" x="928" y="253">Parses all PDFs and</text>
+  <text class="step-text" x="928" y="268">extracts charge data</text>
+
+  <!-- Step 4 -->
+  <circle class="step-num" cx="906" cy="308" r="14"/>
+  <text class="step-num-text" x="900" y="313">4</text>
+  <text class="step-text" x="928" y="303">Builds and saves the</text>
+  <text class="step-text" x="928" y="318">Excel report file</text>
+
+  <!-- Step 5 -->
+  <circle class="step-num" cx="906" cy="358" r="14"/>
+  <text class="step-num-text" x="900" y="363">5</text>
+  <text class="step-text" x="928" y="353">Prints the output</text>
+  <text class="step-text" x="928" y="368">filename on success</text>
+
+  <!-- Note box -->
+  <rect class="note-box" x="60" y="432" width="1080" height="96" rx="10"/>
+  <text x="80" y="458" fill="#7a5c00" font-family="Arial,sans-serif" font-size="13" font-weight="700">⚠  Before running:</text>
+  <text class="note-text" x="80" y="480">1.  Place all AWS invoice PDFs for the previous month inside the  invoices/  folder.</text>
+  <text class="note-text" x="80" y="500">2.  Install required packages once:  pip install pdfplumber openpyxl</text>
+  <text class="note-text" x="80" y="520">3.  If the Excel output file is already open in Excel, close it before rerunning — otherwise the script cannot save.</text>
+</svg>
