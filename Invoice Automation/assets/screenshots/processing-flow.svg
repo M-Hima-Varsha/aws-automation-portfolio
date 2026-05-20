@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="740" viewBox="0 0 520 740" role="img" aria-labelledby="title">
+  <title id="title">AWS Invoice Automation Processing Flow</title>
+  <defs>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .box { fill: #ffffff; stroke: #1f4e78; stroke-width: 2; }
+      .box-text { fill: #18324a; font: 600 13px Arial, sans-serif; }
+      .box-sub  { fill: #52677a; font: 400 12px Arial, sans-serif; }
+      .arrow    { stroke: #2f80ed; stroke-width: 2.5; fill: none; marker-end: url(#arr); }
+      .title-t  { fill: #1f4e78; font: 700 17px Arial, sans-serif; }
+    </style>
+    <marker id="arr" markerWidth="9" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#2f80ed"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="520" height="740"/>
+
+  <!-- Title -->
+  <text class="title-t" x="260" y="36" text-anchor="middle">Processing Flow</text>
+
+  <!-- Step boxes: centered at x=260, width=320, so x=100 -->
+  <!-- Box height=64, gap between boxes=30, arrow height=30 -->
+  <!-- y positions: 60, 154, 248, 342, 436, 530, 624 (but only 8 steps, adjust) -->
+
+  <!-- Step 1: y=56 -->
+  <rect class="box" x="100" y="56" width="320" height="64" rx="10"/>
+  <text class="box-text" x="260" y="82" text-anchor="middle">AWS Invoice PDFs placed</text>
+  <text class="box-sub"  x="260" y="102" text-anchor="middle">in invoices/ folder</text>
+  <path class="arrow" d="M260 122 L260 148"/>
+
+  <!-- Step 2: y=150 -->
+  <rect class="box" x="100" y="150" width="320" height="64" rx="10"/>
+  <text class="box-text" x="260" y="176" text-anchor="middle">Validate billing period</text>
+  <text class="box-sub"  x="260" y="196" text-anchor="middle">against previous month</text>
+  <path class="arrow" d="M260 216 L260 242"/>
+
+  <!-- Step 3: y=244 -->
+  <rect class="box" x="100" y="244" width="320" height="64" rx="10"/>
+  <text class="box-text" x="260" y="270" text-anchor="middle">Extract text from each PDF</text>
+  <text class="box-sub"  x="260" y="290" text-anchor="middle">using pdfplumber</text>
+  <path class="arrow" d="M260 310 L260 336"/>
+
+  <!-- Step 4: y=338 -->
+  <rect class="box" x="100" y="338" width="320" height="64" rx="10"/>
+  <text class="box-text" x="260" y="364" text-anchor="middle">Parse account name, ID,</text>
+  <text class="box-sub"  x="260" y="384" text-anchor="middle">invoice number, and charges</text>
+  <path class="arrow" d="M260 404 L260 430"/>
+
+  <!-- Step 5: y=432 -->
+  <rect class="box" x="100" y="432" width="320" height="64" rx="10"/>
+  <text class="box-text" x="260" y="458" text-anchor="middle">Classify charges</text>
+  <text class="box-sub"  x="260" y="478" text-anchor="middle">AWS Services / Marketplace / Late Fee</text>
+  <path class="arrow" d="M260 498 L260 524"/>
+
+  <!-- Step 6: y=526 -->
+  <rect class="box" x="100" y="526" width="320" height="64" rx="10"/>
+  <text class="box-text" x="260" y="552" text-anchor="middle">Remove duplicate entries</text>
+  <text class="box-sub"  x="260" y="572" text-anchor="middle">consolidate_results()</text>
+  <path class="arrow" d="M260 592 L260 618"/>
+
+  <!-- Step 7: y=620 -->
+  <rect class="box" x="100" y="620" width="320" height="64" rx="10"/>
+  <text class="box-text" x="260" y="646" text-anchor="middle">Build account-wise rows</text>
+  <text class="box-sub"  x="260" y="666" text-anchor="middle">with totals and grand total</text>
+  <path class="arrow" d="M260 686 L260 706"/>
+
+  <!-- Step 8 (output): y=708, dark blue -->
+  <rect fill="#1f4e78" x="100" y="708" width="320" height="24" rx="8"/>
+  <text fill="#ffffff" font-family="Arial,sans-serif" font-size="12" font-weight="700" x="260" y="725" text-anchor="middle">Export formatted Excel Invoice Report</text>
+</svg>

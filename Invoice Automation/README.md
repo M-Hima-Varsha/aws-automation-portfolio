@@ -112,11 +112,11 @@ The `.gitignore` file included in this project is pre-configured to prevent invo
 ```text
 Invoice Automation/
 ├── invoice-automation.py
-├── generate_dummy_invoices.py
 ├── README.md
 ├── .gitignore
 ├── invoices/
-│   ├── .gitkeep
+│   └── .gitkeep
+├── sample-invoices/
 │   ├── Invoice_DEMO0000001.pdf
 │   ├── Invoice_DEMO0000002.pdf
 │   └── Invoice_DEMO0000003.pdf
@@ -135,12 +135,11 @@ Invoice Automation/
 | File or Folder | Description |
 |---|---|
 | `invoice-automation.py` | Main Python automation script |
-| `generate_dummy_invoices.py` | Generates dummy AWS invoice PDFs for testing and demonstration |
 | `README.md` | Full project documentation |
 | `.gitignore` | Prevents real invoice PDFs and Excel reports from being committed |
-| `invoices/` | Input folder — place all AWS invoice PDFs here before running |
+| `invoices/` | Input folder — place real AWS invoice PDFs here before running |
 | `invoices/.gitkeep` | Keeps the empty folder tracked in GitHub |
-| `invoices/Invoice_DEMO000000*.pdf` | Dummy invoice PDFs — safe to commit, contain no real billing data |
+| `sample-invoices/` | Sample dummy invoice PDFs with fake data — safe to push to GitHub |
 | `assets/screenshots/` | SVG visuals used in this README |
 | `Invoice_Report_Dev&Prod-<Month>-<Year>.xlsx` | Generated Excel report — saved in the project root, not committed |
 
@@ -154,21 +153,16 @@ Install Python before running the script. Then install the required packages usi
 pip install pdfplumber openpyxl
 ```
 
-To generate the dummy invoice PDFs for testing, install one additional package:
-
-```powershell
-pip install reportlab
-```
-
 ### Package Reference
 
 | Package | Purpose |
 |---|---|
 | `pdfplumber` | Reads and extracts text content from AWS invoice PDFs |
 | `openpyxl` | Creates, formats, and saves the Excel Invoice Report |
-| `reportlab` | Required only to run `generate_dummy_invoices.py` — not needed for the main script |
 
 No database, cloud API, AWS SDK, or external service is required.
+
+> **Note:** If you want to regenerate the sample dummy invoices in `sample-invoices/`, install `reportlab` additionally and run `generate_dummy_invoices.py`. This is optional and not required to run the main automation.
 
 ---
 
@@ -188,12 +182,12 @@ Place all AWS invoice PDFs for the billing month inside the `invoices/` folder b
 
 ```text
 invoices/
-├── Invoice_DEMO0000001.pdf
-├── Invoice_DEMO0000002.pdf
-└── Invoice_DEMO0000003.pdf
+├── Invoice_123456789.pdf
+├── Invoice_987654321.pdf
+└── Invoice_112233445.pdf
 ```
 
-> **For testing:** Run `python generate_dummy_invoices.py` to generate sample invoice PDFs inside the `invoices/` folder. These dummy PDFs contain no real billing data and are safe to commit to GitHub.
+> **Sample invoices:** The `sample-invoices/` folder contains dummy PDFs with fake data that match the expected invoice format. Use them to understand the input structure before running with real invoices.
 
 ---
 
@@ -223,55 +217,7 @@ Invoice Report is updated for April-2026 : Invoice_Report_Dev&Prod-April-2026.xl
 
 <div align="center">
 
-```text
- ┌─────────────────────────────┐
- │   AWS Invoice PDFs placed   │
- │     in invoices/ folder     │
- └────────────┬────────────────┘
-              │
-              ▼
- ┌─────────────────────────────┐
- │  Validate billing period    │
- │  against previous month     │
- └────────────┬────────────────┘
-              │
-              ▼
- ┌─────────────────────────────┐
- │  Extract text from each PDF │
- │  using pdfplumber           │
- └────────────┬────────────────┘
-              │
-              ▼
- ┌─────────────────────────────┐
- │  Parse account name, ID,    │
- │  invoice number, and charges│
- └────────────┬────────────────┘
-              │
-              ▼
- ┌─────────────────────────────┐
- │  Classify charges:          │
- │  AWS Services / Marketplace │
- │  / Late Fee                 │
- └────────────┬────────────────┘
-              │
-              ▼
- ┌─────────────────────────────┐
- │  Remove duplicate entries   │
- └────────────┬────────────────┘
-              │
-              ▼
- ┌─────────────────────────────┐
- │  Build account-wise rows    │
- │  with totals and grand total│
- └────────────┬────────────────┘
-              │
-              ▼
- ┌─────────────────────────────┐
- │  Export formatted Excel     │
- │  Invoice Report using       │
- │  openpyxl and save to disk  │
- └─────────────────────────────┘
-```
+![Processing Flow](assets/screenshots/processing-flow.svg)
 
 </div>
 
@@ -311,6 +257,12 @@ Invoice_Report_Dev&Prod-<Month>-<Year>.xlsx
 | Column headers | Row 2 uses light blue fill with bold text |
 | Grand total row | Uses green fill with bold text |
 | Freeze panes | Row 1 and 2 are frozen for easy scrolling |
+
+<div align="center">
+
+![Generated Excel Invoice Report Layout](assets/screenshots/excel-report-layout.svg)
+
+</div>
 
 ---
 
@@ -496,13 +448,12 @@ The script includes built-in safeguards to ensure reliable and consistent execut
 
 ```text
 invoice-automation.py
-generate_dummy_invoices.py
 README.md
 .gitignore
 invoices/.gitkeep
-invoices/Invoice_DEMO0000001.pdf
-invoices/Invoice_DEMO0000002.pdf
-invoices/Invoice_DEMO0000003.pdf
+sample-invoices/Invoice_DEMO0000001.pdf
+sample-invoices/Invoice_DEMO0000002.pdf
+sample-invoices/Invoice_DEMO0000003.pdf
 assets/screenshots/process-flow.svg
 assets/screenshots/access-and-security.svg
 assets/screenshots/excel-report-layout.svg
@@ -516,11 +467,12 @@ assets/screenshots/console-output.svg
 ```text
 invoices/Invoice_<real-invoice-number>.pdf
 Invoice_Report_Dev&Prod-*.xlsx
+generate_dummy_invoices.py
 __pycache__/
 *.pyc
 ```
 
-> **Important:** The `.gitignore` is configured to block all PDFs by default. The 3 dummy invoice files are explicitly allowed using `!invoices/Invoice_DEMO*.pdf` exceptions. Real invoice PDFs with actual billing data must never be committed.
+> **Important:** Real invoice PDFs with actual billing data must never be committed. Only the dummy PDFs in `sample-invoices/` are safe to push. The `generate_dummy_invoices.py` script is a local utility and should not be committed.
 
 ---
 
