@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="360" viewBox="0 0 940 360" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Access Requirements</title>
+  <desc id="desc">AWS access diagram showing local AWS profile connecting to STS, Organizations, Cost Explorer, and Pricing API.</desc>
+  <rect width="940" height="360" fill="#101820"/>
+  <rect x="28" y="26" width="884" height="308" rx="8" fill="#17232f" stroke="#35506a"/>
+  <text x="470" y="62" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff">AWS Access Requirements</text>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#ffffff">
+    <rect x="62" y="132" width="170" height="82" rx="6" fill="#0b5f83" stroke="#5fb4d8"/>
+    <text x="147" y="165" text-anchor="middle" font-size="16" font-weight="700">Local AWS Profile</text>
+    <text x="147" y="190" text-anchor="middle" font-size="13">AWS_PROFILE / default</text>
+    <rect x="318" y="92" width="160" height="64" rx="6" fill="#2b6b4f" stroke="#78c6a2"/>
+    <text x="398" y="118" text-anchor="middle" font-size="15" font-weight="700">STS</text>
+    <text x="398" y="138" text-anchor="middle" font-size="12">Account ID</text>
+    <rect x="318" y="192" width="160" height="64" rx="6" fill="#2b6b4f" stroke="#78c6a2"/>
+    <text x="398" y="218" text-anchor="middle" font-size="15" font-weight="700">Organizations</text>
+    <text x="398" y="238" text-anchor="middle" font-size="12">Account name</text>
+    <rect x="570" y="92" width="160" height="64" rx="6" fill="#5a5130" stroke="#cfbd67"/>
+    <text x="650" y="118" text-anchor="middle" font-size="15" font-weight="700">Cost Explorer</text>
+    <text x="650" y="138" text-anchor="middle" font-size="12">RI utilization</text>
+    <rect x="570" y="192" width="160" height="64" rx="6" fill="#5a5130" stroke="#cfbd67"/>
+    <text x="650" y="218" text-anchor="middle" font-size="15" font-weight="700">Pricing API</text>
+    <text x="650" y="238" text-anchor="middle" font-size="12">vCPU / memory</text>
+    <rect x="782" y="142" width="96" height="64" rx="6" fill="#4d405f" stroke="#b8a0d8"/>
+    <text x="830" y="169" text-anchor="middle" font-size="15" font-weight="700">Report</text>
+    <text x="830" y="189" text-anchor="middle" font-size="12">CSV + Excel</text>
+  </g>
+  <g stroke="#9fb6c8" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M232 173 H318"/>
+    <path d="M478 124 H570"/>
+    <path d="M478 224 H570"/>
+    <path d="M730 124 C760 124 760 154 782 164"/>
+    <path d="M730 224 C760 224 760 194 782 184"/>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9fb6c8"/>
+    </marker>
+  </defs>
+</svg>

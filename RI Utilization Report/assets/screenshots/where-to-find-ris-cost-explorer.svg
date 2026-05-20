@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="380" viewBox="0 0 920 380" role="img" aria-labelledby="title desc">
+  <title id="title">Where To Find RI Utilization In AWS Cost Explorer</title>
+  <desc id="desc">Diagram showing the AWS Billing and Cost Management path to Cost Explorer reports for RI Utilization and RI Coverage.</desc>
+  <rect width="920" height="380" fill="#101820"/>
+  <rect x="28" y="26" width="864" height="328" rx="8" fill="#17232f" stroke="#35506a"/>
+  <text x="460" y="62" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff">Where To Find RI Utilization</text>
+  <text x="460" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#b9c7d6">Billing and Cost Management -> Cost Explorer -> Reports</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#ffffff">
+    <rect x="72" y="146" width="178" height="72" rx="6" fill="#0b5f83" stroke="#5fb4d8"/>
+    <text x="161" y="176" text-anchor="middle" font-size="16" font-weight="700">Billing</text>
+    <text x="161" y="199" text-anchor="middle" font-size="13">Cost Management</text>
+
+    <path d="M252 182 H326" fill="none" stroke="#7e96ad" stroke-width="2"/>
+    <path d="M326 182 l-10 -7 v14 z" fill="#7e96ad"/>
+
+    <rect x="338" y="146" width="178" height="72" rx="6" fill="#204f79" stroke="#6ea7dc"/>
+    <text x="427" y="176" text-anchor="middle" font-size="16" font-weight="700">Cost Explorer</text>
+    <text x="427" y="199" text-anchor="middle" font-size="13">Reports</text>
+
+    <path d="M518 182 H592" fill="none" stroke="#7e96ad" stroke-width="2"/>
+    <path d="M592 182 l-10 -7 v14 z" fill="#7e96ad"/>
+
+    <rect x="604" y="116" width="244" height="64" rx="6" fill="#2b6b4f" stroke="#78c6a2"/>
+    <text x="726" y="143" text-anchor="middle" font-size="16" font-weight="700">RI Utilization</text>
+    <text x="726" y="165" text-anchor="middle" font-size="13">Used and unused RI hours</text>
+
+    <rect x="604" y="208" width="244" height="64" rx="6" fill="#5a5130" stroke="#cfbd67"/>
+    <text x="726" y="235" text-anchor="middle" font-size="16" font-weight="700">RI Coverage</text>
+    <text x="726" y="257" text-anchor="middle" font-size="13">Usage covered by reservations</text>
+
+    <rect x="120" y="306" width="680" height="32" rx="6" fill="#263646" stroke="#4a6682"/>
+    <text x="460" y="327" text-anchor="middle" font-size="13">This script reads RI Utilization data through AWS Cost Explorer APIs.</text>
+  </g>
+</svg>

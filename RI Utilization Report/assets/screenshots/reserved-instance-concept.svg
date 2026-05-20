@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360" role="img" aria-labelledby="title desc">
+  <title id="title">Reserved Instance Concept</title>
+  <desc id="desc">Diagram comparing On-Demand pricing with Reserved Instance discounted pricing for predictable AWS usage.</desc>
+  <rect width="920" height="360" fill="#101820"/>
+  <rect x="28" y="26" width="864" height="308" rx="8" fill="#17232f" stroke="#35506a"/>
+  <text x="460" y="64" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff">Reserved Instance Concept</text>
+  <text x="460" y="92" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#b9c7d6">Commit to predictable usage and receive a discount compared with On-Demand pricing.</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#ffffff">
+    <rect x="86" y="138" width="260" height="128" rx="8" fill="#0b5f83" stroke="#5fb4d8"/>
+    <text x="216" y="172" text-anchor="middle" font-size="18" font-weight="700">On-Demand</text>
+    <text x="216" y="203" text-anchor="middle" font-size="14">No long-term commitment</text>
+    <text x="216" y="229" text-anchor="middle" font-size="14">Pay for usage as it runs</text>
+    <text x="216" y="252" text-anchor="middle" font-size="13" fill="#d6edf8">Flexible, usually higher cost</text>
+
+    <rect x="574" y="138" width="260" height="128" rx="8" fill="#2b6b4f" stroke="#78c6a2"/>
+    <text x="704" y="172" text-anchor="middle" font-size="18" font-weight="700">Reserved Instance</text>
+    <text x="704" y="203" text-anchor="middle" font-size="14">1-year or 3-year commitment</text>
+    <text x="704" y="229" text-anchor="middle" font-size="14">Discount applies to matching usage</text>
+    <text x="704" y="252" text-anchor="middle" font-size="13" fill="#d9f5e8">Best for steady workloads</text>
+
+    <path d="M370 202 H550" fill="none" stroke="#cfbd67" stroke-width="3"/>
+    <path d="M550 202 l-12 -8 v16 z" fill="#cfbd67"/>
+    <text x="460" y="187" text-anchor="middle" font-size="14" fill="#f0df88">Predictable usage</text>
+
+    <rect x="242" y="292" width="436" height="26" rx="6" fill="#263646" stroke="#4a6682"/>
+    <text x="460" y="310" text-anchor="middle" font-size="13">RI utilization reporting checks whether the purchased commitment is being used.</text>
+  </g>
+</svg>

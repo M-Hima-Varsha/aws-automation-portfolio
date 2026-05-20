@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="620" viewBox="0 0 1040 620" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Console Cost Explorer RI Utilization Example</title>
+  <desc id="desc">Console-style guide showing Cost Explorer Reports with RI Utilization highlighted.</desc>
+  <rect width="1040" height="620" fill="#eef1f5"/>
+  <rect x="32" y="28" width="976" height="564" rx="8" fill="#ffffff" stroke="#c5ced8"/>
+
+  <rect x="32" y="28" width="976" height="48" rx="8" fill="#16191f"/>
+  <rect x="32" y="64" width="976" height="12" fill="#16191f"/>
+  <text x="62" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">AWS Console</text>
+  <rect x="206" y="42" width="350" height="22" rx="4" fill="#2a2f3a" stroke="#4b5563"/>
+  <text x="222" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cbd5e1">Search for Billing and Cost Management</text>
+  <text x="850" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cbd5e1">Cost Explorer</text>
+
+  <rect x="32" y="76" width="256" height="516" fill="#f7f8fa" stroke="#d5dbe3"/>
+  <text x="56" y="114" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#16191f">Billing and Cost Management</text>
+  <text x="56" y="144" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#5f6b7a">Left navigation</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14">
+    <rect x="48" y="174" width="220" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="66" y="196" fill="#334155">Home</text>
+    <rect x="48" y="216" width="220" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="66" y="238" fill="#334155">Bills</text>
+    <rect x="48" y="258" width="220" height="34" rx="4" fill="#e8f5ff" stroke="#0972d3"/>
+    <text x="66" y="280" font-weight="700" fill="#0b5cab">Cost Explorer</text>
+    <rect x="68" y="300" width="200" height="34" rx="4" fill="#e8f5ff" stroke="#0972d3"/>
+    <text x="86" y="322" font-weight="700" fill="#0b5cab">Reports</text>
+    <rect x="68" y="342" width="200" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="86" y="364" fill="#334155">Savings Plans</text>
+    <rect x="68" y="384" width="200" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="86" y="406" fill="#334155">Reservations</text>
+  </g>
+
+  <rect x="314" y="106" width="662" height="454" rx="6" fill="#ffffff" stroke="#d5dbe3"/>
+  <text x="342" y="146" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#16191f">Cost Explorer Reports</text>
+  <text x="342" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#5f6b7a">Open Reports, then choose RI Utilization to view purchased, used, and unused RI hours.</text>
+
+  <rect x="342" y="206" width="278" height="296" rx="6" fill="#f8fafc" stroke="#d5dbe3"/>
+  <text x="366" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#16191f">Report templates</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14">
+    <rect x="362" y="262" width="238" height="38" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="382" y="286" fill="#334155">Monthly costs by service</text>
+    <rect x="362" y="310" width="238" height="42" rx="4" fill="#e8f5ff" stroke="#0972d3"/>
+    <text x="382" y="336" font-weight="700" fill="#0b5cab">RI Utilization</text>
+    <rect x="362" y="362" width="238" height="38" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="382" y="386" fill="#334155">RI Coverage</text>
+    <rect x="362" y="410" width="238" height="38" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="382" y="434" fill="#334155">Savings Plans Utilization</text>
+  </g>
+
+  <rect x="650" y="206" width="284" height="296" rx="6" fill="#ffffff" stroke="#d5dbe3"/>
+  <text x="674" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#16191f">RI Utilization</text>
+  <text x="674" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#5f6b7a">Group by account, service, region, or instance type.</text>
+
+  <rect x="674" y="302" width="54" height="140" fill="#2b6b4f"/>
+  <rect x="746" y="338" width="54" height="104" fill="#2b6b4f"/>
+  <rect x="818" y="382" width="54" height="60" fill="#cfbd67"/>
+  <line x1="674" y1="442" x2="900" y2="442" stroke="#94a3b8"/>
+  <text x="674" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">Purchased hours</text>
+  <text x="794" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">Used hours</text>
+  <text x="872" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">Unused</text>
+</svg>

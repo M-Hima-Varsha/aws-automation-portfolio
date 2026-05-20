@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">Where To Find Reserved Instances In AWS Service Consoles</title>
+  <desc id="desc">Diagram showing AWS console service paths for EC2 Reserved Instances, RDS Reserved instances, ElastiCache Reserved nodes, Redshift Reserved nodes, and OpenSearch Reserved instances.</desc>
+  <rect width="920" height="420" fill="#101820"/>
+  <rect x="28" y="26" width="864" height="368" rx="8" fill="#17232f" stroke="#35506a"/>
+  <text x="460" y="62" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff">Where To Find Purchased RIs</text>
+  <text x="460" y="90" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#b9c7d6">Open the AWS service console and choose the reservation page for that service.</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#ffffff">
+    <rect x="68" y="126" width="150" height="64" rx="6" fill="#0b5f83" stroke="#5fb4d8"/>
+    <text x="143" y="153" text-anchor="middle" font-size="16" font-weight="700">EC2</text>
+    <text x="143" y="176" text-anchor="middle" font-size="13">Reserved Instances</text>
+
+    <rect x="273" y="126" width="150" height="64" rx="6" fill="#204f79" stroke="#6ea7dc"/>
+    <text x="348" y="153" text-anchor="middle" font-size="16" font-weight="700">RDS</text>
+    <text x="348" y="176" text-anchor="middle" font-size="13">Reserved instances</text>
+
+    <rect x="478" y="126" width="150" height="64" rx="6" fill="#2b6b4f" stroke="#78c6a2"/>
+    <text x="553" y="153" text-anchor="middle" font-size="16" font-weight="700">ElastiCache</text>
+    <text x="553" y="176" text-anchor="middle" font-size="13">Reserved nodes</text>
+
+    <rect x="683" y="126" width="150" height="64" rx="6" fill="#5a5130" stroke="#cfbd67"/>
+    <text x="758" y="153" text-anchor="middle" font-size="16" font-weight="700">Redshift</text>
+    <text x="758" y="176" text-anchor="middle" font-size="13">Reserved nodes</text>
+
+    <rect x="273" y="236" width="374" height="64" rx="6" fill="#60405f" stroke="#c18ac0"/>
+    <text x="460" y="263" text-anchor="middle" font-size="16" font-weight="700">OpenSearch Service</text>
+    <text x="460" y="286" text-anchor="middle" font-size="13">Reserved instances</text>
+
+    <path d="M143 198 L143 226 L330 226 L330 236" fill="none" stroke="#7e96ad" stroke-width="2"/>
+    <path d="M348 198 L348 236" fill="none" stroke="#7e96ad" stroke-width="2"/>
+    <path d="M553 198 L553 236" fill="none" stroke="#7e96ad" stroke-width="2"/>
+    <path d="M758 198 L758 226 L590 226 L590 236" fill="none" stroke="#7e96ad" stroke-width="2"/>
+
+    <rect x="162" y="334" width="596" height="38" rx="6" fill="#263646" stroke="#4a6682"/>
+    <text x="460" y="358" text-anchor="middle" font-size="14">Use these pages to verify subscription IDs, reservation IDs, instance types, regions, terms, and quantities.</text>
+  </g>
+</svg>

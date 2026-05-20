@@ -1,0 +1,50 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local virtual environments.
+.venv/
+venv/
+env/
+
+# AWS credentials, profiles, keys, and local environment files.
+.env
+.env.*
+*.pem
+*.key
+credentials*
+config*
+
+# Generated RI utilization CSV snapshots and monthly output folders.
+*.csv
+*- 20*/
+* - 20*/
+
+# Allow demo CSV snapshots with safe sample or redacted data.
+!demo-*/
+!Demo-*/
+!demo-*/*.csv
+!Demo-*/*.csv
+
+# Generated Excel reports.
+RI Utilization Report *.xlsx
+*.xlsx
+*.xls
+*.xlsm
+
+# Allow demo Excel workbooks with safe sample or redacted data.
+!demo-*.xlsx
+!Demo-*.xlsx
+
+# Local editor and OS files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files.
+*.log
+logs/
+*.tmp
+~$*

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="390" viewBox="0 0 980 390" role="img" aria-labelledby="title desc">
+  <title id="title">RI Excel Report Layout</title>
+  <desc id="desc">Diagram of the final RI Utilization Excel workbook sections for RDS and ElastiCache.</desc>
+  <rect width="980" height="390" fill="#101820"/>
+  <rect x="28" y="26" width="924" height="338" rx="8" fill="#17232f" stroke="#35506a"/>
+  <text x="490" y="62" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#ffffff">RI Excel Report Layout</text>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#ffffff">
+    <rect x="70" y="92" width="840" height="44" rx="4" fill="#0b4f79"/>
+    <text x="490" y="120" text-anchor="middle" font-size="16" font-weight="700">Sheet: RI Utilization</text>
+    <rect x="70" y="166" width="390" height="120" rx="6" fill="#1d2b38" stroke="#5fb4d8"/>
+    <rect x="70" y="166" width="390" height="34" rx="6" fill="#0b5f83"/>
+    <text x="265" y="188" text-anchor="middle" font-size="15" font-weight="700">RDS RI Utilization</text>
+    <text x="94" y="226" font-size="13">Account</text>
+    <text x="190" y="226" font-size="13">Subscription</text>
+    <text x="304" y="226" font-size="13">RI Purchased</text>
+    <text x="94" y="258" font-size="13">RI Hours</text>
+    <text x="190" y="258" font-size="13">Used Hours</text>
+    <text x="304" y="258" font-size="13">Utilization %</text>
+    <rect x="520" y="166" width="390" height="120" rx="6" fill="#1d2b38" stroke="#cfbd67"/>
+    <rect x="520" y="166" width="390" height="34" rx="6" fill="#5a5130"/>
+    <text x="715" y="188" text-anchor="middle" font-size="15" font-weight="700">ElastiCache RI Utilization</text>
+    <text x="544" y="226" font-size="13">Account</text>
+    <text x="648" y="226" font-size="13">Node Type</text>
+    <text x="762" y="226" font-size="13">Purchased</text>
+    <text x="544" y="258" font-size="13">RI Hours</text>
+    <text x="648" y="258" font-size="13">Used Hours</text>
+    <text x="762" y="258" font-size="13">Utilization %</text>
+    <text x="490" y="324" text-anchor="middle" font-size="14" fill="#c9d7e2">Formatted sections, headers, widths, borders, and utilization values</text>
+  </g>
+</svg>

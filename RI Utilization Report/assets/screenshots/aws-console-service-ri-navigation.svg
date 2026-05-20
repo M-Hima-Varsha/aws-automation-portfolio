@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="620" viewBox="0 0 1040 620" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Console Service RI Navigation Example</title>
+  <desc id="desc">Console-style guide showing where to find Reserved Instances or Reserved Nodes inside AWS service consoles.</desc>
+  <rect width="1040" height="620" fill="#eef1f5"/>
+  <rect x="32" y="28" width="976" height="564" rx="8" fill="#ffffff" stroke="#c5ced8"/>
+
+  <rect x="32" y="28" width="976" height="48" rx="8" fill="#16191f"/>
+  <rect x="32" y="64" width="976" height="12" fill="#16191f"/>
+  <text x="62" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">AWS Console</text>
+  <rect x="206" y="42" width="350" height="22" rx="4" fill="#2a2f3a" stroke="#4b5563"/>
+  <text x="222" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cbd5e1">Search for EC2, RDS, ElastiCache, Redshift, or OpenSearch</text>
+  <text x="882" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#cbd5e1">Region: us-east-1</text>
+
+  <rect x="32" y="76" width="236" height="516" fill="#f7f8fa" stroke="#d5dbe3"/>
+  <text x="56" y="114" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" fill="#16191f">Service Console</text>
+  <text x="56" y="144" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#5f6b7a">Left navigation</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14">
+    <rect x="48" y="174" width="200" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="66" y="196" fill="#334155">Dashboard</text>
+    <rect x="48" y="216" width="200" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="66" y="238" fill="#334155">Instances / Databases</text>
+    <rect x="48" y="258" width="200" height="42" rx="4" fill="#e8f5ff" stroke="#0972d3"/>
+    <text x="66" y="282" font-weight="700" fill="#0b5cab">Reserved Instances</text>
+    <text x="66" y="296" font-size="11" fill="#0b5cab">or Reserved nodes</text>
+    <rect x="48" y="308" width="200" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="66" y="330" fill="#334155">Snapshots</text>
+    <rect x="48" y="350" width="200" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="66" y="372" fill="#334155">Parameter groups</text>
+    <rect x="48" y="392" width="200" height="34" rx="4" fill="#ffffff" stroke="#d5dbe3"/>
+    <text x="66" y="414" fill="#334155">Events</text>
+  </g>
+
+  <rect x="292" y="106" width="684" height="454" rx="6" fill="#ffffff" stroke="#d5dbe3"/>
+  <text x="320" y="146" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#16191f">Reserved Instances</text>
+  <text x="320" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#5f6b7a">Use this page to verify purchased reservations, region, term, quantity, and status.</text>
+
+  <rect x="320" y="206" width="628" height="42" rx="4" fill="#f7f8fa" stroke="#d5dbe3"/>
+  <text x="340" y="232" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#334155">Filter by reservation ID, instance type, status, or region</text>
+
+  <rect x="320" y="276" width="628" height="46" fill="#f1f5f9" stroke="#d5dbe3"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#334155">
+    <text x="340" y="304">Reservation ID</text>
+    <text x="505" y="304">Instance type</text>
+    <text x="650" y="304">Region</text>
+    <text x="760" y="304">Term</text>
+    <text x="850" y="304">State</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">
+    <rect x="320" y="322" width="628" height="48" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="340" y="351">ri-xxxxxxxx</text>
+    <text x="505" y="351">db.demo.large</text>
+    <text x="650" y="351">us-east-1</text>
+    <text x="760" y="351">1 year</text>
+    <text x="850" y="351">active</text>
+    <rect x="320" y="370" width="628" height="48" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="340" y="399">ri-yyyyyyyy</text>
+    <text x="505" y="399">cache.demo.medium</text>
+    <text x="650" y="399">ap-south-1</text>
+    <text x="760" y="399">3 years</text>
+    <text x="850" y="399">active</text>
+  </g>
+
+  <rect x="536" y="468" width="346" height="50" rx="6" fill="#fff7ed" stroke="#f59e0b"/>
+  <text x="558" y="491" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#92400e">Tip</text>
+  <text x="590" y="491" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#92400e">For EC2 this is Reserved Instances.</text>
+  <text x="590" y="510" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#92400e">For RDS, ElastiCache, and Redshift it may appear as Reserved instances or Reserved nodes.</text>
+</svg>
