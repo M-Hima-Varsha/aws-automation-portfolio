@@ -11,6 +11,27 @@
 
 ---
 
+## Table Of Contents
+
+- [1. What Is A Reserved Instance?](#1-what-is-a-reserved-instance)
+- [2. How Reserved Instances Are Purchased](#2-how-reserved-instances-are-purchased)
+- [3. Where To Find Reserved Instances In AWS](#3-where-to-find-reserved-instances-in-aws)
+- [4. Why RI Utilization Reporting Is Needed](#4-why-ri-utilization-reporting-is-needed)
+- [5. What This Automation Does](#5-what-this-automation-does)
+- [6. Visual Guide](#6-visual-guide)
+- [7. Project Structure](#7-project-structure)
+- [8. Dependencies](#8-dependencies)
+- [9. AWS Access Required](#9-aws-access-required)
+- [10. Step-By-Step Code Process](#10-step-by-step-code-process)
+- [11. Excel Column Reference](#11-excel-column-reference)
+- [12. Output Files](#12-output-files)
+- [13. Demo Files](#13-demo-files)
+- [14. Git Ignore Rules](#14-git-ignore-rules)
+- [15. Troubleshooting](#15-troubleshooting)
+- [16. Summary](#16-summary)
+
+---
+
 ## 1. What Is A Reserved Instance?
 
 A Reserved Instance, commonly called an RI, is an AWS billing discount option.
